@@ -1,121 +1,326 @@
-:root {
-    --cor-principal: #FFE6F0;
-    --cor-rosachoque: #FFB8D2;
-    --cor-vinho: #4C2334;
-    --cor-vermelha: #C11B2C;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--cor-principal);
+:root {
+    /*cores*/
+    --cor-rosaclaro: #FFE6F0;
+    --cor-rosachoque: #FFB8D2;
+    --cor-vinho: #4C2334;
+    --cor-vermelha: #C11B2C;
 }
 
+body{
+    background-color: var(--cor-rosaclaro);
+}
+  /*CABEÇALHO*/
 .cabeçalho{
     display: flex;
+    background-color: var(--cor-vinho);
     justify-content: space-between;
     align-items: center;
-    padding: 6px 16px 6px 0;
-    background-color: var(--cor-vinho);
+    height: 25px;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  /*BARRA DE NAVEGAÇAO*/
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
 }
 
-#logo img{
-    height: 36px;
-    width: auto;
-    display: block;
-}
-
-.menu{
+.navbar a{
     display: flex;
     align-items: center;
-    gap: 12px;
-    list-style: none;
-
+    justify-content: center;
 }
 
-#icone-sacola {
-    width: 22px;
-    height: 22px;
-    display: block;
+#icone-sacola{
+    width: 13px;
+    height: 13px;
 }
 
-icone-estrela {
-    width: 26px;
-    height: 26px;
-    display: block;
+#icone-estrela{
+    width: 20px;
+    height: 20px;  
+    margin-bottom: 2px;
 }
 
-.linha-menor, .linha-maior{
-    display: block;
+#logo{
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: -26px;
+}
+
+  /*INICIO DO SITE*/
+.inicio-site{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.inicio-site h1{
     color: var(--cor-vinho);
 }
 
-.textos-piramide h2{
+.inicio-site h2{
+    font-size: 17px;
     color: var(--cor-vermelha);
 }
 
-.textos-piramide h1{
-    font-size: 40px;
-    margin-top: 20px;
+.inicio-site p{
+    margin: 4px auto 0 auto;
+    color: var(--cor-vinho);
+    font-size: 14px;
+    text-align: justify;
+    width: 325px;
 }
 
-.textos-piramide p{
-    font-size: 15px;
-}
-
-.botoes{
-    margin: 10px 0;
+.botoes-inicio{
     display: flex;
-    gap: 8px;
-}
-
-.cardapio, .historia{
-    border: solid 1px var(--cor-vinho);
-    padding: 8px;
-    border-radius: 5px;
-    text-decoration: none;
-    box-sizing: border-box;
-    width: 150px;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.botoes-inicio a {
+    text-decoration: none;
+    border: 1px solid var(--cor-vinho);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 155px;
     text-align: center;
 }
 
-.cardapio{
-    color: var(--cor-principal);
+#cardapio{
     background-color: var(--cor-vinho);
+    color: var(--cor-rosaclaro);
 }
 
-.historia{
+#historia{
     color: var(--cor-vinho);
 }
 
-.elipse{
-    border: 1px solid var(--cor-vinho);
+.imagem-inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px;
+}
+
+.imagem-inicial img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seçao-topo{
+    padding-bottom: 30px;
+}
+  /*PRODUTOS MAIS VENDIDOS*/
+.seçao-produtos{
+    background-color: var(--cor-rosachoque);
+    padding-top: 1px;
+    padding-bottom: 40px;
+    display: block;
+    border-radius: 0px;
+}
+
+.seçao-produtos .elipse{
     background-color: var(--cor-vinho);
-    color: var(--cor-rosachoque);
+    width: 200px;
+    height: 65px;
     border-radius: 50%;
-    width: 280px;
-    height: 100px;
-    padding: 20px;
+    margin: -22px auto 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: -55px auto 25px;
     position: relative;
-    z-index: 10;
+    z-index: 10px;
 }
 
-.elipse h2{
-    font-size: 20px;
+.seçao-produtos .elipse h2{
+    color: var(--cor-rosachoque);
+    font-size: 14px;
     font-weight: normal;
-    line-height: 1.3;
+    line-height: 1.25;
     margin: 0;
-    max-width: 175px;
+    padding: 25px;
 }
+
+.subtitulo-produtos p{
+    color: var(--cor-vinho);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 auto 25px;
+    padding: 0 8px;
+}
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px 35px;
+}
+
+.card-produto > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-rosaclaro) ;
+    border-radius: 22px;
+    padding: 0 0 12px 0px;
+    width: 205px;
+    overflow: hidden;
+}
+
+.card-produto > div img{
+    width: 100%;
+    height: 130px;
+    border-radius: 22px;
+    margin-bottom: 6px;
+}
+
+.card-produto > div h3{
+    color: var(--cor-vinho);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 6px 0 4px;
+    padding: 0 10px;
+}
+
+.card-produto div p{
+    color: var(--cor-vinho);
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 0 2px;
+    padding: 0 16px;
+}
+
+.card-produto div p + p{
+    background-color: var(--cor-vermelha);
+    color: var(--cor-rosachoque);
+    font-weight: bold;
+    font-size: 14px;
+    width: 90px;
+    margin: 6px 0 0px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+  /*CARDAPIO*/
+.seçao-cardapio{
+    background-color: var(--cor-vinho);
+    padding: 24px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seçao-cardapio h2{
+    width: 100%;
+    background: none;
+    border-radius: 0;
+    padding: 0 4px;
+    color: var(--cor-rosachoque);
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    text-align: left;
+    font-weight: normal;
+}
+
+.seçao-cardapio > div{
+   width: 47%;
+   height: 90px;
+   display: flex;
+   align-items: center;
+   background-color: var(--cor-rosaclaro);
+   border-radius: 18px;
+   padding: 0px;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+
+.seçao-cardapio > div img{
+    width: 42%;
+    height: 100%;
+    border-radius: 0 14px 14px 0;
+    flex-shrink: 0;
+}
+
+.seçao-cardapio > div a{
+    color: var(--cor-vinho);
+    text-decoration: none;
+    font-size: 8.5px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 0 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+  /*GALERIA*/
+.galeria{
+    background-color: var(--cor-rosaclaro);
+    padding: 24px 12px;
+    box-sizing: border-box;
+}
+
+.galeria h2{
+    padding: 0;
+    color: var(--cor-vinho);
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 16px 4px;
+    text-align: left;
+}
+
+.grade-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.grade-galeria img{
+    width: 48%;
+    height: 75px;
+    border-radius: 40px;
+}
+
+.btn-ver-tudo{
+    width: 48%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-vinho);
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--cor-vinho);
+    border-radius: 40px;
+    gap: 6px;
+}
+
+  /*cores*/
+
+

@@ -8,12 +8,12 @@
 </head>
 <body>
     <header class="cabeçalho">
-        <a id="logo" href="index.html" aria-label="Destinos Doces - início">
-            <img src="imagens/logo_doces.svg" alt="Destinos Doces" width="120" height="62"/>
+        <a  href="index.html" aria-label="Destinos Doces - início">
+            <img id="logo" src="imagens/logo_doces.svg" alt="Destinos Doces" width="120" height="62"/>
         </a>
         
-        <nav>
-            <ul class="menu">
+        <nav class="navbar">
+            <ul>
                 <li>
                     <a href="imagens/Shopping bag.svg">
                     <img id="icone-sacola" src="imagens/Shopping bag.svg" alt="Sacola"> 
@@ -28,49 +28,78 @@
         </nav>
     </header>
     <main>  
-        <div>
-            <div class="textos-piramide">
-                <h1><span class="linha-menor">Um destino,</span> <span class="linha-maior"> mil sabores.</span></h1>
+        <div class="seçao-topo">
+            <div class="inicio-site">
+                <h1>Um destino, <br> mil sabores.</h1>
                 <h2>Onde o mundo se encontra em forma de doce</h2>
-                <p><span class="linha-menor">Tradição e inovação celebram a diversidade de culturas </span><span class="linha-maior">com sofisticação
+                <p>Tradição e inovação celebram a diversidade de culturas com sofisticação
                 e acolhimento em cada mordida.</span></p>
             </div>
 
-            <div class="botoes">
-                <a class="cardapio" href="Explorar Cardápio"> Explorar Cardápio</a>
-                <a class="historia" href="Nossa História"> Nossa História</a>
+            <div class="botoes-inicio">
+                <a href="#" id="cardapio"> Explorar Cardápio</a>
+                <a href="#" id="historia"> Nossa História</a>
             </div>
             
-             <div>
+             <div class="imagem-inicial">
                 <img src="imagens/doce_inicial.png" alt="Foto de brigadeiros coloridos" width="310" height="340">
             </div>
         </div>
-        <div>
+        <div class="seçao-produtos">
             <div class="elipse"> 
-                <h2>Nossos Produtos Mais Amados</h2>
+                <h2>Nossos Produtos <br> Mais Amados</h2>
             </div>
-
-            <div class="card_produto">
+            <div class="subtitulo-produtos">
+                <p>Escolhidos com carinho para adoçar o seu dia.</p>
+            </div>
+            <div class="card-produto">
                 <div>
-                    <h3>Bombom</h3>
-                    <img src="imagens/macaron.jpg" alt="macaron" width="200" height="100">
+                    <img src="imagens/macaron.jpg" alt="macaron">
+                     <h3>Bombom</h3>
                     <p>4 unidades seila oq</p>
-                    <p>7,00</p>
+                    <p>R$ 7,00</p>
                 </div>
                  <div>
-                    <h3>Bombom</h3>
-                    <img src="imagens/macaron.jpg" alt="macaron" width="200" height="100">
+                    <img src="imagens/macaron.jpg" alt="macaron">
+                     <h3>Bombom</h3>
                     <p>4 unidades seila oq</p>
-                    <p>7,00</p>
+                    <p>R$ 7,00</p>
                 </div>
                  <div>
-                    <h3>Bombom</h3>
-                    <img src="imagens/macaron.jpg" alt="macaron" width="200" height="100">
+                    <img src="imagens/macaron.jpg" alt="macaron">
+                     <h3>Bombom</h3>
                     <p>4 unidades seila oq</p>
-                    <p>7,00</p>
+                    <p>R$ 7,00</p>
+                </div>
+            </div>
+            <div class="seçao-cardapio">
+                    <h2>Cardápio por Categoria</h2>
+                <div>
+                    <img src="imagens/macaron.jpg" alt="doces">
+                    <a href="Dooces estrangeiros">Doces Tradicionais</a>
+                </div>
+                <div>
+                    <img src="imagens/macaron.jpg" alt="doces">
+                    <a href="Dooces estrangeiros">Doces Estrangeiros</a>
+                </div>
+                <div>
+                    <img src="imagens/macaron.jpg" alt="doces">
+                    <a href="Dooces estrangeiros">Doces Premium</a>
+                </div>
+            </div>
+            <div class="galeria">
+                <h2>Galeria</h2>
+                <div class="grade-galeria">
+                    <img src="imagens/macaron.jpg" alt="doce">
+                    <img src="imagens/macaron.jpg" alt="doce">
+                    <img src="imagens/macaron.jpg" alt="doce">
+                    <img src="imagens/macaron.jpg" alt="doce">
+                    <img src="imagens/macaron.jpg" alt="doce">
+
+                    <a href="galeria.html" class="btn-ver-tudo">Ver tudo &rarr;</a>
                 </div>
             </div>
         </div>
-    </main>
+    </main> 
 </body>
 </html>
